@@ -1,0 +1,85 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    body {
+        background-color: #457B9D;
+    }
+    
+    #quote-box {
+        width: 30vw;
+        box-shadow: 0 2.6px 5.5px rgba(0, 0, 0, 0.082), 0 6.3px 13.3px rgba(0, 0, 0, 0.117), 0 11.9px 25px rgba(0, 0, 0, 0.145), 0 21.2px 44.7px rgba(0, 0, 0, 0.173), 0 39.7px 83.6px rgba(0, 0, 0, 0.208), 0 95px 200px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #F1FAEE;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #text {
+        font-family: 'Girassol', cursive;
+        text-align: center;
+        font-size: 30px;
+        color: #1D3557;
+    }
+    
+    #author {
+        font-family: 'Bad Script', cursive;
+        text-align: end;
+        color: #1D3557;
+    }
+    
+    #new-quote {
+        font-family: 'Girassol', cursive;
+        background-color: #E63946;
+        border-radius: 5px;
+        width: 80px;
+        height: 40px;
+        color: #F1FAEE;
+        box-shadow: none;
+        border: none;
+        margin-top: 40px;
+    }
+    
+    #new-quote:focus {
+        outline: none;
+    }
+    
+    #new-quote:hover {
+        background-color: rgb(216, 61, 74);
+    }
+    
+    #tweet-quote {
+        width: 40px;
+        height: 40px;
+        color: #E63946;
+        margin-top: 40px;
+    }
+    
+    .byUrl {
+        font-family: 'Girassol', cursive;
+        color: #F1FAEE;
+        font-size: 20px;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    @media only screen and (max-width: 900px) {
+        #text {
+            font-size: 22px;
+        }
+        #quote-box {
+            width: 45vw;
+        }
+    }
