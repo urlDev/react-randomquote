@@ -53,7 +53,7 @@ class QuoteAuthor extends Component {
 							target="_blank"
 							title="Post this quote on twitter!"
 						>
-							<i class="fab fa-twitter fa-3x" />
+							<i class="fab fa-twitter-square fa-3x" />
 						</a>
 						<button id="new-quote" onClick={this.getNewQuote}>
 							New Quote
