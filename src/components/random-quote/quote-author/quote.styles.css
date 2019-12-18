@@ -56,13 +56,17 @@
     }
     
     #new-quote:hover {
-        background-color: rgb(216, 61, 74);
+        background-color: #1D3557;
     }
     
     #tweet-quote {
         color: #E63946;
         margin: 0;
         padding: 0;
+    }
+    
+    #tweet-quote:hover {
+        background-color: #1D3557;
     }
     
     .byUrl {
