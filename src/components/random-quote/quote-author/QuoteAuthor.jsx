@@ -17,18 +17,20 @@ class QuoteAuthor extends Component {
 	}
 
 	getQuote() {
-		fetch('https://gist.githubusercontent.com/nasrulhazim/54b659e43b1035215cd0ba1d4577ee80/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
+		fetch(
+			'https://gist.githubusercontent.com/nasrulhazim/54b659e43b1035215cd0ba1d4577ee80/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json'
+		)
 			.then((res) => res.json())
-			.then((data => {
-			data = data.quotes;
-			let quoteNum = Math.floor(Math.random() * data.length);
-			let randomQuote = data[quoteNum];
+			.then((data) => {
+				data = data.quotes;
+				let quoteNum = Math.floor(Math.random() * data.length);
+				let randomQuote = data[quoteNum];
 
-			this.setState({
-				quote: randomQuote['quote'],
-				author: randomQuote['author']
+				this.setState({
+					quote: randomQuote['quote'],
+					author: randomQuote['author']
+				});
 			});
-		}));
 	}
 	getNewQuote = () => {
 		this.getQuote();
